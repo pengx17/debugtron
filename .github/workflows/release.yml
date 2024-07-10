@@ -16,4 +16,4 @@ jobs:
       - name: Install dependencies
         run: corepack yarn install
       - run: corepack yarn make
-      - run: corepack yarn release
+      - run: corepack yarn publish
