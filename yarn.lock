@@ -2570,6 +2570,9 @@ __metadata:
     universal-analytics: "npm:^0.5.3"
     uuid: "npm:^9.0.1"
     vite: "npm:^5.2.11"
+  dependenciesMeta:
+    registry-js:
+      optional: true
   languageName: unknown
   linkType: soft
 
