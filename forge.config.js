@@ -3,7 +3,7 @@ module.exports = {
     asar: true,
     appBundleId: "io.github.pd4d10.debugtron",
     icon: "assets/icon",
-    ignore: ["/node_modules/registry-js/build/node_gyp_bins/python3"],
+    ignore: ["node_modules/registry-js/build/node_gyp_bins/python3"],
   },
   makers: [
     { name: "@electron-forge/maker-squirrel", config: {} },
