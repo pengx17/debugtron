@@ -10,13 +10,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
+      - run: corepack enable
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           cache: "yarn"
       - name: Install dependencies
         run: yarn install
-      - name: make
-        run: yarn make
-      - name: Release
-        run: yarn release
+      - run: yarn make
+      - run: yarn release
