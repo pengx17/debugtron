@@ -13,6 +13,7 @@ jobs:
       - run: corepack enable
       - name: Setup Node.js
         uses: actions/setup-node@v4
+      - run: pip install setuptools
       - name: Install dependencies
         run: yarn install
       - run: yarn make
