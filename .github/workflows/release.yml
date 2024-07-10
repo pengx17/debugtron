@@ -15,5 +15,6 @@ jobs:
       - run: pip install setuptools
       - name: Install dependencies
         run: corepack yarn install
-      - run: corepack yarn make
       - run: corepack yarn publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
